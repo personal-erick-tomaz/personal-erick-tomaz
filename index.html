@@ -17,7 +17,6 @@
             margin: 0;
             padding: 0;
             color: #333;
-            /* FOTO NO FUNDO DE TUDO */
             background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), 
                               url('perfil (2).jpeg');
             background-size: cover;
@@ -27,11 +26,9 @@
         }
 
         header {
-            /* REMOVIDO O FUNDO COLORIDO PARA APARECER A FOTO */
             background: transparent; 
             padding: 60px 20px;
             text-align: center;
-            /* Opcional: uma borda sutil embaixo */
             border-bottom: 2px solid rgba(70, 130, 180, 0.2);
         }
 
@@ -48,17 +45,26 @@
             margin-top: 15px; 
             color: var(--azul-escuro); 
             font-size: 2.5em;
-            text-shadow: 1px 1px 2px white; /* Ajuda a ler sobre a foto */
+            text-shadow: 1px 1px 2px white;
         }
 
         .container { max-width: 1000px; margin: auto; padding: 40px 20px; }
 
         .servico-card, .plano-card {
-            background: rgba(255, 255, 255, 0.95); /* Deixa o card quase branco para destacar da foto */
+            background: rgba(255, 255, 255, 0.95);
             padding: 25px;
             border-radius: 15px;
             box-shadow: 0 8px 20px rgba(0,0,0,0.1);
             border: 1px solid var(--prata);
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        /* EFEITO DE SALTAR AO PASSAR O MOUSE */
+        .servico-card:hover, .plano-card:hover {
+            transform: scale(1.08) translateY(-10px); /* Aumenta e sobe levemente */
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+            border-color: var(--azul-escuro);
         }
 
         .servicos, .planos {
@@ -81,8 +87,9 @@
             margin-top: 10px;
             transition: 0.3s;
         }
+        
+        .btn-pagamento:hover { background-color: #2c5e85; }
 
-        /* ANIMAÇÃO DO WHATSAPP CORRIGIDA */
         @keyframes pulsar {
             0% { transform: scale(1); }
             50% { transform: scale(1.05); }
@@ -100,6 +107,12 @@
             font-weight: bold;
             box-shadow: 0 4px 10px rgba(0,0,0,0.2);
             animation: pulsar 2s infinite;
+            transition: 0.3s;
+        }
+        
+        .btn-whatsapp:hover {
+            background-color: #1eb956;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.3);
         }
 
         footer { background: rgba(192, 192, 192, 0.9); padding: 30px; text-align: center; margin-top: 50px; }
@@ -136,26 +149,26 @@
                 <h3>Plano Mensal</h3>
                 <p>Foco total no mês atual</p>
                 <div class="preco">R$ 69,90</div>
-                <a href="https://mpago.la/1kujMFz" class="btn-pagamento">ASSINAR AGORA</a>
+                <a href="https://mpago.la/1kujMFz" target="_blank" class="btn-pagamento">ASSINAR AGORA</a>
             </div>
 
-            <div class="plano-card" style="border-color: var(--azul-escuro); transform: scale(1.05);">
+            <div class="plano-card" style="border-color: var(--azul-escuro);">
                 <h3>Plano Único</h3>
                 <p>Montagem de treino específica</p>
                 <div class="preco">R$ 59,90</div>
-                <a href="https://mpago.la/1dQ771q" class="btn-pagamento">COMPRAR AGORA</a>
+                <a href="https://mpago.la/1dQ771q" target="_blank" class="btn-pagamento">COMPRAR AGORA</a>
             </div>
 
             <div class="plano-card">
                 <h3>Plano Semestral <span style="font-size: 0.5em; background: #25d366; color: white; padding: 5px; border-radius: 5px; vertical-align: middle;">ECONOMIA</span></h3>
                 <p>Compromisso com o resultado</p>
                 <div class="preco">R$ 299,90</div>
-                <a href="https://mpago.la/241gf88" class="btn-pagamento">ASSINAR COM DESCONTO</a>
+                <a href="https://mpago.la/241gf88" target="_blank" class="btn-pagamento">ASSINAR COM DESCONTO</a>
             </div>
         </div>
 
         <div style="text-align: center;">
-            <a href="https://wa.me/5544988325680?text=Olá Ana Paula, gostaria de tirar dúvidas sobre a consultoria!" class="btn-whatsapp">
+            <a href="https://wa.me/5544988325680?text=Olá Ana Paula, gostaria de tirar dúvidas sobre a consultoria!" target="_blank" class="btn-whatsapp">
                 FALAR COMIGO NO WHATSAPP
             </a>
         </div>
