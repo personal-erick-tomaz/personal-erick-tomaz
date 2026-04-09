@@ -10,14 +10,14 @@
     
     <style>
         :root {
-            /* PALETA DE CORES AESTHETIC E CLEAN */
+            /* PALETA DE CORES ATUALIZADA */
             --preto: #000000;
             --cinza-escuro: #333333;
             --branco: #ffffff;
             --vermelho-pulsante: #ff0000;
             --vermelho-hover: #cc0000;
-            /* FUNDO BRANCO OPACO BAIXO SOBRE A FOTO */
-            --fundo-opaco: rgba(255, 255, 255, 0.92); 
+            /* NOVO FUNDO CLARINHO: CINZA MUITO CLARO COM OPACIDADE */
+            --fundo-opaco: rgba(240, 240, 240, 0.9); 
             --sombra-clean: 0 4px 15px rgba(0,0,0,0.05);
         }
 
@@ -29,7 +29,7 @@
             color: var(--cinza-escuro);
             background-color: var(--branco);
             
-            /* FUNDO COM FOTO E PELÍCULA BRANCA LEVE */
+            /* FUNDO COM FOTO E PELÍCULA CLARINHA */
             background-image: linear-gradient(var(--fundo-opaco), var(--fundo-opaco)), 
                               url('perfil (2).jpeg');
             background-size: cover;
@@ -99,7 +99,8 @@
             padding: 30px;
             border-radius: 10px;
             box-shadow: var(--sombra-clean);
-            border: 1px solid #eee;
+            /* NOVO: BORDAS PRETAS FINAS NOS CARDS */
+            border: 1px solid var(--preto);
             transition: transform 0.3s ease;
         }
 
