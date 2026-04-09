@@ -11,7 +11,7 @@
     <style>
         :root {
             --preto: #000000;
-            --cinza-escuro: #333333;
+            --cinza-claro: #333333;
             --branco: #ffffff;
             --vermelho-vivo: #ff0000;
             --fundo-clean-opaco: rgba(255, 255, 255, 0.96); /* Fundo branco transparente */
@@ -23,7 +23,7 @@
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            color: var(--cinza-escuro);
+            color: var(--cinza-claro);
             background-color: var(--branco);
             overflow-x: hidden; /* Impede barra de rolagem horizontal pelas bolinhas */
             
@@ -51,7 +51,7 @@
         .bolinha {
             position: absolute;
             border-radius: 50%;
-            background: rgba(255, 0, 0, 0.1); /* Vermelho muito transparente */
+            background: rgba(255, 0, 0, 0.1); /* cinza escuro */
             animation: flutuar linear infinite;
         }
 
@@ -86,13 +86,13 @@
             font-size: 2.2em;
             color: var(--preto);
             letter-spacing: 1px;
-            text-shadow: var(--glow-branco); /* GLOW NA ESCRITA */
+            text-shadow: var(--glow-branco); /* BRILHO NA ESCRITA */
         }
 
         .header-info p {
             margin-top: 5px;
             font-size: 1.2em;
-            color: var(--cinza-escuro);
+            color: var(--cinza-claro);
             text-shadow: var(--glow-branco);
         }
 
@@ -204,7 +204,7 @@
         .btn-assine {
             display: inline-block;
             background-color: transparent;
-            color: var(--vermelho-vivo); /* Texto Vermelho */
+            color: var(--vermelho-vivo); /* Texto preto */
             text-decoration: none;
             padding: 16px 32px;
             border: 2px solid var(--vermelho-vivo);
@@ -246,7 +246,7 @@
             align-items: center;
             justify-content: center;
             text-decoration: none;
-            /* ANIMAÇÃO PULSANTE COM GLOW BRANCO */
+            /* ANIMAÇÃO PULSANTE COM GLOW VERMELHO */
             animation: whatsPulsarGlow 2s infinite ease-in-out; 
             transition: 0.3s;
         }
@@ -275,7 +275,7 @@
             background: rgba(255, 255, 255, 0.8); 
             padding: 50px; 
             text-align: center; 
-            color: var(--cinza-escuro); 
+            color: var(--cinza-claro); 
             border-top: 1px solid #eee;
             margin-top: 50px;
         }
@@ -304,28 +304,28 @@
         </div>
     </header>
     
-    <div class="frase-impacto">Erick Tomaz - Seu treino em foco.</div>
+    <div class="frase-impacto">Erick Tomaz - Seu treino em foco. 🧠</div>
 
     <div class="container">
         <div class="servicos">
             <div class="servico-card">
                 <span class="icone-beneficio">🏆</span> <h3>Resultados Reais</h3>
-                <p>Metodologia validada para quem busca evolução estética e performance constante.</p>
+                <p>Transforme sua rotina com exercícios planejados para o seu bem-estar físico e mental.</p>
             </div>
             <div class="servico-card">
                 <span class="icone-beneficio">🛡️</span> <h3>Início Seguro</h3>
-                <p>Foco total na técnica correta e biomecânica, prevenindo lesões desde o primeiro treino.</p>
+                <p>Foco total na técnica correta, prevenindo lesões desde o primeiro treino.</p>
             </div>
             <div class="servico-card">
                 <span class="icone-beneficio">⏳</span> <h3>Longevidade</h3>
-                <p>Treinos inteligentes planejados para manter sua saúde e força ao longo dos anos.</p>
+                <p>Treine para viver bem: conquiste mais disposição, força e mobilidade para aproveitar a vida com saúde total.</p>
             </div>
         </div>
 
         <div class="planos">
             <div class="plano-card">
                 <h3><span class="icone-plano">🗓️</span>Plano Mensal</h3>
-                <p>Acompanhamento e ajustes foco no mês atual.</p>
+                <p>Acompanhamento mensal com ajustes necessários.</p>
                 <div class="preco">R$ 69,90</div>
                 <a href="https://mpago.la/2EVdv2o" target="_blank" class="btn-assine">ASSINE AGORA</a>
             </div>
